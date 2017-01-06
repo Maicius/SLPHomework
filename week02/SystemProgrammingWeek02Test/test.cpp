@@ -26,7 +26,10 @@ int bitXor(int x, int y) {
 
 }
 int getByte(int x, int n){
-	return (0xff & (x >>( n<< 3)));
+	
+	//return (0xff & (x >>( n<< 3)));
+	int  a=n<<3;
+	return (0xff & (x>>(n<<3)));
 }
 int isPositive(int x) {
 	//设字长为N,算术右移n-1为，最高位为符号位
@@ -41,6 +44,16 @@ int negate(int x) {
   return ~x+1;
 
 }
+int isLess(int x, int y){
+	return !((~x+1+y)>>31);
+}
+
+int shiftAreArith(){
+	return (-1)==(-1>>1);
+}
+int isNonNegative(int x){
+	return !(x>>31);
+}
 
 
 int main(){
@@ -53,5 +66,9 @@ int main(){
 	printf("Negate: %d \n", negate(32));
 	printf("getByte: %x \n",getByte(0x12345678,1));
 	printf("%d",isPositive(16));
+	printf("%d",shiftAreArith());
+	printf("%d\n",isNonNegative(5));
+	printf("%d\n",isNonNegative(-5));
+	printf("lsLess: %x \n",isLess(3, 2));
 	getchar();
 }
