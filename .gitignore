@@ -31,3 +31,11 @@
 *.tmp
 *.ppt
 *.opensdf
+*.dsp
+*.ncb
+*.opt
+*.dsw
+*.plg
+*.ilk
+*.pdb
+*.idb
