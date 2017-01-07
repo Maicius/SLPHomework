@@ -1,19 +1,26 @@
-struct S{
-	int i;
-	int *p;
-};
-
-int main(){
-	S s;
-	int *p=&s.i;
-	p[0]=4;
-	p[1]=3;
-	s.p=p;
-	int i;
-	 
-	s.p[1]=1;
-	s.p[0]=2;
-	
-
-	return 0;
+#include <stdio.h>
+#include <malloc.h>
+#include <string>
+//int* ptr_to_zero(){
+//	int i=0;
+//	return &i;
+//}
+//void main(){
+//	int x=4;
+//	int *p=&x;
+//	int *k=p++;
+//	char r=p-k;
+//	while(1){
+//		printf("addr:%d\n",ptr_to_zero());
+//	}
+//	printf("%d",r);
+//}
+void GetMemory(char** p, int num){
+	*p=(char*)malloc(sizeof(char)*num);
+}
+void main(){
+	char *str=NULL;
+	GetMemory(&str,100);
+	strcpy(str,"hello");
+	getchar();
 }
