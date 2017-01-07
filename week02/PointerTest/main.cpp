@@ -8,7 +8,6 @@ int main(){
 	int *p=&s.i;
 	p[1]=3;
 	p[0]=4;
-	p[2]=5;
 	s.p=p;
 	int i;
 	
