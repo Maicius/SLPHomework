@@ -39,3 +39,9 @@
 *.ilk
 *.pdb
 *.idb
+*.tlog
+week02/PointerTest/Debug/PointerTest.log
+*.lastbuildstate
+*.vcxproj
+*.filters
+*.log

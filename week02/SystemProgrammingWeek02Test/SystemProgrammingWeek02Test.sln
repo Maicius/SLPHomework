@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SystemProgrammingWeek02Test", "SystemProgrammingWeek02Test.vcxproj", "{0E77989A-510C-4B18-B870-A32EFCEF96A9}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointerTest", "..\PointerTest\PointerTest.vcxproj", "{513ADBDD-A080-4D17-91FE-BBAC6FDFE039}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PointerTest2", "PointerTest2\PointerTest2.vcxproj", "{912E6A45-4E3C-4AE1-9721-48EF18867418}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +17,14 @@ Global
 		{0E77989A-510C-4B18-B870-A32EFCEF96A9}.Debug|Win32.Build.0 = Debug|Win32
 		{0E77989A-510C-4B18-B870-A32EFCEF96A9}.Release|Win32.ActiveCfg = Release|Win32
 		{0E77989A-510C-4B18-B870-A32EFCEF96A9}.Release|Win32.Build.0 = Release|Win32
+		{513ADBDD-A080-4D17-91FE-BBAC6FDFE039}.Debug|Win32.ActiveCfg = Debug|Win32
+		{513ADBDD-A080-4D17-91FE-BBAC6FDFE039}.Debug|Win32.Build.0 = Debug|Win32
+		{513ADBDD-A080-4D17-91FE-BBAC6FDFE039}.Release|Win32.ActiveCfg = Release|Win32
+		{513ADBDD-A080-4D17-91FE-BBAC6FDFE039}.Release|Win32.Build.0 = Release|Win32
+		{912E6A45-4E3C-4AE1-9721-48EF18867418}.Debug|Win32.ActiveCfg = Debug|Win32
+		{912E6A45-4E3C-4AE1-9721-48EF18867418}.Debug|Win32.Build.0 = Debug|Win32
+		{912E6A45-4E3C-4AE1-9721-48EF18867418}.Release|Win32.ActiveCfg = Release|Win32
+		{912E6A45-4E3C-4AE1-9721-48EF18867418}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
