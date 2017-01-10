@@ -82,6 +82,12 @@
 int main(){
 	int n=3;
 	char str[10]="hello!";
+	char* str1="0123456789";
+	int ss4[100];
+	int *ss3;
+	printf("%d\n",sizeof(ss3));
+	printf("%d",sizeof(str1));
 	int isocre[2]={0};
+	getchar();
 	return 0;
 }

@@ -31,12 +31,12 @@ int getByte(int x, int n){
 	int  a=n<<3;
 	return (0xff & (x>>(n<<3)));
 }
+int getBit(int x, int n){
+	return (0x1 & (x>>n));
+}
 int isPositive(int x) {
 	//设字长为N,算术右移n-1为，最高位为符号位
-  int a=~x>>3;
-  int b = ~x+1;
-  int c = (~x+1)>>3;
-  return (~x>>3)&((~x+1)>>3)&0x1;
+    return !((x>>31)|(!x));
 
 }
 int negate(int x) {
@@ -63,12 +63,13 @@ int main(){
 	printf("Iszero: %d\n",isZero(0));
 	printf("MinusOne: %d\n", minusOne(5));
 	printf("XOR: %d \n", bitXor(4, 5));
-	printf("Negate: %d \n", negate(32));
-	printf("getByte: %x \n",getByte(0x12345678,1));
-	printf("%d",isPositive(16));
-	printf("%d",shiftAreArith());
-	printf("%d\n",isNonNegative(5));
-	printf("%d\n",isNonNegative(-5));
+	printf("Negate: %d \n", negate(0));
+	printf("getByte: %x \n",getByte(0x12345678,3));
+	printf("getBit: %x \n",getBit(0x12345678,3));
+	printf("isPositive:%d\n",isPositive(1));
+	printf("shiftAreArith:%d\n",shiftAreArith());
+	printf("isNonNegative:%d\n",isNonNegative(0));
+	printf("isNonNegative:%d\n",isNonNegative(-5));
 	printf("lsLess: %x \n",isLess(3, 2));
 	getchar();
 }
